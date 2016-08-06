@@ -351,7 +351,7 @@ html {
 }
 
 body {
-    background: #fff; /* Fallback for when there is no custom background color defined. */
+    background: #847f8e; /* Fallback for when there is no custom background color defined. */
 }
 
 blockquote:before,
@@ -766,10 +766,10 @@ a:active {
     display: inline;
 }
 
-.page-content,
 .entry-content,
-.entry-summary {
-    margin: 1.5em 0 0;
+.entry-meta,
+.entry-footer {
+    padding: 15px;
 }
 
 .page-links {
@@ -893,11 +893,6 @@ object {
     display: block;
 }
 
-body {
-    background: #b9c7d0;
-    color: 524947;
-}
-
 a {
     color: red;
 }
@@ -922,7 +917,6 @@ a {
     background: #fff;
     max-width: 960px;
     margin: auto;
-    padding: 15px;
 }
 
 .site-header a,

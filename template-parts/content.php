@@ -92,6 +92,6 @@ if (!$site_name) {
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php grind_loop_entry_footer(); ?>
+		<?php // grind_loop_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
