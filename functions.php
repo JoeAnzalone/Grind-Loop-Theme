@@ -64,6 +64,9 @@ function grind_loop_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
+
+	add_theme_support( 'post-formats', ['link'] );
+
 }
 endif;
 add_action( 'after_setup_theme', 'grind_loop_setup' );
@@ -122,6 +125,38 @@ function grind_loop_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'grind_loop_scripts' );
+
+function grind_loop_sitename($host) {
+	$replacements = [
+		'dancingastronaut.com' => 'Dancing Astronaut',
+	];
+
+	return $replacements[$host] ? $replacements[$host] : $host;
+}
+
+function grind_loop_get_title_size_class($classes, $post = null) {
+	$title = get_the_title($post);
+	$title_length = strlen($title);
+
+    $breakpoints = [
+        300 => 'small',
+        70 => 'medium',
+        20 => 'large',
+		0 => 'extra-large',
+    ];
+
+    foreach ($breakpoints as $size => $class) {
+        if ($title_length >= $size) {
+            break;
+        }
+    }
+
+    $classes[] = 'title-size-' . $class;
+
+    return $classes;
+}
+
+add_filter('post_class', 'grind_loop_get_title_size_class');
 
 /**
  * Implement the Custom Header feature.
