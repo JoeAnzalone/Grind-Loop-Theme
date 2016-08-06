@@ -18,6 +18,12 @@ $linked_url = get_post_meta(get_the_id(), 'linked:url')[0];
 // Use the `linked:og:image` custom field as the post thumbnail
 $og_image = get_post_meta(get_the_id(), 'linked:og:image')[0];
 $post_thumbnail = $og_image ? $og_image : get_the_post_thumbnail_url();
+$contain_thumbnail = get_post_meta(get_the_id(), 'contain-thumbnail')[0];
+$contain_thumbnail = filter_var($contain_thumbnail, FILTER_VALIDATE_BOOLEAN);
+if (!$post_thumbnail) {
+	$post_thumbnail = 'https://grindloop.com/wordpress/wp-content/uploads/2016/08/logo-grinder-square-512.png';
+	$contain_thumbnail = true;
+}
 
 // Prepend the post title with one of these:
 // The link's site name taken from the `linked:sitename` custom field
@@ -43,7 +49,7 @@ if (!$site_name) {
 	<header class="entry-header">
 
 
-		<div class="featured-image-wrapper" style="background-image: url(<?php echo $post_thumbnail; ?>)">
+		<div class="featured-image-wrapper <?php if ($contain_thumbnail) { ?>contain<?php } ?>" style="background-image: url(<?php echo $post_thumbnail; ?>)">
 			<?php if ($site_name) { ?>
 				<div class="linked-site-name">
 					From <?php echo $site_name; ?>:

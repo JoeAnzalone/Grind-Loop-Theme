@@ -978,10 +978,14 @@ only screen and (min-resolution: 2dppx) {
 
 .featured-image-wrapper {
     height: 400px;
-    background: #000;
+    background-color: #fff;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.featured-image-wrapper.contain {
+    background-size: contain;
 }
 
 .featured-image-wrapper a:hover .entry-title,
