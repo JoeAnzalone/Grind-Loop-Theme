@@ -1,10 +1,10 @@
 /*
 Theme Name: Grind Loop
-Theme URI: http://underscores.me/
+Theme URI: https://GrindLoop.com
 Author: Joe Anzalone
 Author URI: http://JoeAnzalone.com
 Description: Custom theme for https://GrindLoop.com
-Version: 1.0.0
+Version: 0.0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: grind-loop
@@ -891,4 +891,67 @@ object {
 
 .gallery-caption {
     display: block;
+}
+
+body {
+    background: #b9c7d0;
+    color: 524947;
+}
+
+a {
+    color: red;
+}
+
+.site-title a {
+    background-image: url('images/logo-750x118.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-width: 750px;
+    height: 118px;
+    display: block;
+    margin: auto;
+
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+.site-header,
+.site-content {
+    background: #fff;
+    max-width: 960px;
+    margin: auto;
+    padding: 15px;
+}
+
+.site-header a,
+.site-content a {
+    color: blue;
+}
+
+.site-footer {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.site-footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+.site-footer li {
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.site-footer li:last-child {
+    margin-right: 0;
+}
+
+.site-footer a {
+    text-decoration: none;
 }
