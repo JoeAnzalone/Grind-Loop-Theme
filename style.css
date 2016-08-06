@@ -924,6 +924,10 @@ a {
     color: blue;
 }
 
+.site-description {
+    text-align: center;
+}
+
 .site-footer {
     font-size: 15px;
     text-align: center;
