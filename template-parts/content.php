@@ -30,10 +30,10 @@ $host = grind_loop_sitename($host);
 $site_name = $site_name ? $site_name : $host;
 
 if (!$site_name) {
-	$cat = get_the_category()[0];
+	$category_obj = get_the_category()[0];
 
-	if ($cat->term_id !== 1) {
-		$site_name = $cat->name;
+	if ($category_obj->term_id !== 1) {
+		$category = $category_obj->name;
 	}
 }
 
@@ -46,7 +46,11 @@ if (!$site_name) {
 		<div class="featured-image-wrapper" style="background-image: url(<?php echo $post_thumbnail; ?>)">
 			<?php if ($site_name) { ?>
 				<div class="linked-site-name">
-					<?php echo $site_name; ?>:
+					From <?php echo $site_name; ?>:
+				</div>
+			<?php } elseif ($category) { ?>
+				<div class="main-category-name">
+					<?php echo $category; ?>:
 				</div>
 			<?php } ?>
 			<?php if ($linked_url) { ?>

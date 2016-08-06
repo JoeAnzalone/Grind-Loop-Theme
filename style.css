@@ -1054,6 +1054,7 @@ only screen and (min-resolution: 2dppx) {
 }
 
 
+.main-category-name,
 .linked-site-name {
     position: absolute;
     top: 0;
