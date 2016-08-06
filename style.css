@@ -1030,19 +1030,19 @@ only screen and (min-resolution: 2dppx) {
     text-decoration: underline;
 }
 
-.title-size-extra-large .entry-title {
+.title-size-extra-large .featured-image-wrapper .entry-title {
     font-size: 64px;
 }
 
-.title-size-large .entry-title {
+.title-size-large .featured-image-wrapper .entry-title {
     font-size: 49px;
 }
 
-.title-size-medium .entry-title {
+.title-size-medium .featured-image-wrapper .entry-title {
     font-size: 34px;
 }
 
-.title-size-small .entry-title {
+.title-size-small .featured-image-wrapper .entry-title {
     font-size: 19px;
 }
 
