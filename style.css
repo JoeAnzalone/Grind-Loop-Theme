@@ -897,19 +897,31 @@ a {
     color: red;
 }
 
-.site-title a {
-    background-image: url('images/logo-750x118.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    max-width: 750px;
-    height: 118px;
-    display: block;
-    margin: auto;
+.site-title {
+    margin: 20px;
+    margin-bottom: 0;
+}
 
+.site-title a {
+    display: block;
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
 
+    background-image: url('images/logo-750x118.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 118px;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 2dppx) {
+    .site-title a {
+        background-image: url('images/logo-750x118@2x.png');
+    }
 }
 
 .site-header,
