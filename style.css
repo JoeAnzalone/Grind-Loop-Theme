@@ -150,7 +150,7 @@ svg:not(:root) {
 }
 
 figure {
-    margin: 1em 40px;
+    margin: 10px;
 }
 
 hr {
@@ -854,39 +854,10 @@ object {
     display: inline-block;
     text-align: center;
     vertical-align: top;
-    width: 100%;
 }
 
-.gallery-columns-2 .gallery-item {
-    max-width: 50%;
-}
-
-.gallery-columns-3 .gallery-item {
-    max-width: 33.33%;
-}
-
-.gallery-columns-4 .gallery-item {
-    max-width: 25%;
-}
-
-.gallery-columns-5 .gallery-item {
-    max-width: 20%;
-}
-
-.gallery-columns-6 .gallery-item {
-    max-width: 16.66%;
-}
-
-.gallery-columns-7 .gallery-item {
-    max-width: 14.28%;
-}
-
-.gallery-columns-8 .gallery-item {
-    max-width: 12.5%;
-}
-
-.gallery-columns-9 .gallery-item {
-    max-width: 11.11%;
+.gallery-item img.size-thumbnail {
+    width: 75px;
 }
 
 .gallery-caption {
@@ -1013,7 +984,7 @@ only screen and (min-resolution: 2dppx) {
     height: 100%;
     background: rgba(255, 255, 255, 0.65);
     background: linear-gradient(to top, #000 0%, #fff 100%);
-    opacity: 0.8;
+    opacity: 0.4;
 }
 
 .entry-title {
