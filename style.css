@@ -1028,11 +1028,14 @@ only screen and (min-resolution: 2dppx) {
     text-decoration: underline;
 }
 
-
 .main-category-name,
 .linked-site-name {
     position: absolute;
     top: 0;
     padding: 10px;
     opacity: 0.7;
+}
+
+.oembed[data-host="soundcloud.com"] > iframe {
+    width: 100%;
 }
