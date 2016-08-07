@@ -510,7 +510,7 @@ a {
 }
 
 a:visited {
-    color: purple;
+    color: #8872b5;
 }
 
 a:hover,
@@ -864,10 +864,6 @@ object {
     display: block;
 }
 
-a {
-    color: red;
-}
-
 .site-title {
     margin: 20px;
     margin-bottom: 0;
@@ -904,7 +900,12 @@ only screen and (min-resolution: 2dppx) {
 
 .site-header a,
 .site-content a {
-    color: blue;
+    color: #6f38dc;
+}
+
+.site-header a:visited,
+.site-content a:visited {
+    color: #8872b5;
 }
 
 .site-description {
@@ -912,7 +913,7 @@ only screen and (min-resolution: 2dppx) {
 }
 
 .site-footer {
-    font-size: 15px;
+    font-size: 13px;
     text-align: center;
     margin-top: 15px;
 }
@@ -935,6 +936,7 @@ only screen and (min-resolution: 2dppx) {
 
 .site-footer a {
     text-decoration: none;
+    color: #bdbdbd;
 }
 
 .entry-header .featured-image-wrapper {
