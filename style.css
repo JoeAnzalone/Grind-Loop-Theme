@@ -981,9 +981,7 @@ only screen and (min-resolution: 2dppx) {
 
 .entry-title {
     padding: 10px;
-}
-
-.entry-title {
+    margin: 32px 0;
     color: #272727;
     text-decoration: none;
 }
