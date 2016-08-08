@@ -506,7 +506,7 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-    color: royalblue;
+    color: #6f38dc;
 }
 
 a:visited {
@@ -896,16 +896,6 @@ only screen and (min-resolution: 2dppx) {
     background: #fff;
     max-width: 960px;
     margin: auto;
-}
-
-.site-header a,
-.site-content a {
-    color: #6f38dc;
-}
-
-.site-header a:visited,
-.site-content a:visited {
-    color: #8872b5;
 }
 
 .site-description {
