@@ -30,7 +30,7 @@ if (!$post_thumbnail) {
 // The link's site name taken from `grind_loop_sitename($host)` in functions.php
 // The link's hostname taken from the URL if a site name can not be obtained
 // The category (Only if it's not a link and it belongs to a non-default category)
-$site_name = get_post_meta(get_the_id(), 'linked:sitename')[0];
+$site_name = get_post_meta(get_the_id(), 'linked:og:site_name')[0];
 $host = get_post_meta(get_the_id(), 'linked:host')[0];
 $host = grind_loop_sitename($host);
 $site_name = $site_name ? $site_name : $host;
