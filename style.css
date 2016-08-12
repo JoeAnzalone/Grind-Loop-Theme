@@ -354,6 +354,12 @@ body {
     background: #847f8e; /* Fallback for when there is no custom background color defined. */
 }
 
+blockquote {
+    padding-left: 14px;
+    margin: 0;
+    border-left: 5px solid #dbd5e6;
+}
+
 blockquote:before,
 blockquote:after,
 q:before,
