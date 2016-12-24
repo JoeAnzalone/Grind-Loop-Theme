@@ -39,4 +39,25 @@
             }
         } );
     } );
+
+    // Headings color
+    var headings_selector = 'h1, h2, h3, h4, h5, h6';
+    wp.customize( 'headings_color', function( value ) {
+        value.bind( function( to ) {
+            if ( 'blank' === to ) {
+                $( headings_selector ).css( {
+                    'clip': 'rect(1px, 1px, 1px, 1px)',
+                    'position': 'absolute'
+                } );
+            } else {
+                $( headings_selector ).css( {
+                    'clip': 'auto',
+                    'position': 'relative'
+                } );
+                $( headings_selector ).css( {
+                    'color': to
+                } );
+            }
+        } );
+    } );
 } )( jQuery );

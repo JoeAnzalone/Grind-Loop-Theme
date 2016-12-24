@@ -14,6 +14,16 @@ function grind_loop_customize_register( $wp_customize ) {
     $wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
     $wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
     $wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
+
+    $wp_customize->add_setting('headings_color', [
+        'default' => 'ffb93a',
+        'transport' => 'postMessage',
+    ]);
+
+    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'headings_color', [
+        'label' => __('Headings Color', 'grind-loop'),
+        'section' => 'colors',
+    ]));
 }
 add_action( 'customize_register', 'grind_loop_customize_register' );
 

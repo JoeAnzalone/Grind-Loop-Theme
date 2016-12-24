@@ -156,6 +156,16 @@ function grind_loop_get_title_size_class($classes, $post = null) {
     return $classes;
 }
 
+function grind_loop_customize_css()
+{
+    ?>
+    <style type="text/css">
+        h1, h2, h3, h4, h5, h6 { color: <?php echo get_theme_mod('headings_color'); ?>; }
+    </style>
+    <?php
+}
+add_action('wp_head', 'grind_loop_customize_css');
+
 add_filter('post_class', 'grind_loop_get_title_size_class');
 
 /**
