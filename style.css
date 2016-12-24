@@ -279,6 +279,7 @@ h4,
 h5,
 h6 {
     clear: both;
+    color: #ffb93a;
 }
 
 p {
@@ -987,10 +988,16 @@ only screen and (min-resolution: 2dppx) {
 }
 
 .entry-title {
+    padding: 0;
+    padding-left: 15px;
+    margin: 0;
+    text-decoration: none;
+}
+
+.featured-image-wrapper .entry-title {
     padding: 10px;
     margin: 32px 0;
     color: #f5f5f5;
-    text-decoration: none;
 }
 
 .entry-title a:hover,
